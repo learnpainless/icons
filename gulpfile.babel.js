@@ -83,6 +83,8 @@ gulp.task('copy', () => {
             'app/sw.js',
           ], {dot: true, nodir: true,})
           .pipe(gulp.dest('dist')),
+      gulp.src('app/aab/*', {dot: true, nodir: true,})
+          .pipe(gulp.dest('dist/aab')),
       gulp.src('older-version/**/*', {dot: true})
           .pipe(gulp.dest('dist/older-version')));
 });
