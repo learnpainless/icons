@@ -10,9 +10,9 @@ jobs:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession
     runs-on: ubuntu-latest
 
-    # strategy:
-    #   matrix:
-    #     node-version: [12.x]
+    strategy:
+      matrix:
+        node-version: [12.x]
 
     steps:
     - uses: actions/checkout@v3
