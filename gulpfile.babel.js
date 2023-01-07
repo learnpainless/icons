@@ -81,6 +81,7 @@ gulp.task('copy', () => {
       gulp.src([
             'app/favicon.ico',
             'app/sw.js',
+            'app/sitemap.xml',
           ], {dot: true, nodir: true,})
           .pipe(gulp.dest('dist')),
       gulp.src('app/aab/*', {dot: true, nodir: true,})
